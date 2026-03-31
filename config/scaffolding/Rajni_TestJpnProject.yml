@@ -8,6 +8,12 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: SIQACloudStreamsTests
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -23,6 +29,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.math:addInts
   packages:
   - name: WmPublic
@@ -41,6 +51,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
