@@ -44,11 +44,39 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: DADA_ExtendedProperty
+  version: "1.0"
   gitServerName: RajniVCTest
   gitUrl: https://github.com/ParmelaDohling579
   gitUsername: Rajni25Aug
   gitBranch: main
+- name: WmSalesforceProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.rajni_testjpn.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:cldp
+  packages:
+  - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.rajni_testjpn.integrations:Sum
   packages:
   - name: Rajni_TestJpnProject
@@ -81,6 +109,38 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.808
+- serviceName: project.rajni_testjpn.integrations:TESTJDBCSSL
+  packages:
+  - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.rajni_testjpn.integrations:deepclonetest
   packages:
   - name: Rajni_TestJpnProject
@@ -121,6 +181,34 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.808
+- serviceName: project.rajni_testjpn.integrations:test
+  packages:
+  - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: DADA_ExtendedProperty:maxToStringLength
+  packages:
+  - name: DADA_ExtendedProperty
+    version: "1.0"
 - serviceName: project.rajni_testjpn.integrations:testjms
   packages:
   - name: Rajni_TestJpnProject
@@ -157,7 +245,7 @@ services:
   packages:
   - name: JMS2waySSL
     version: "1.0"
-- serviceName: SSL_JDBC_Test.services:insert_ssl
+- serviceName: SSL_JDBC_Test.services:get_ssl
   packages:
   - name: SSL_JDBC_Test
     version: "1.0"
@@ -165,3 +253,86 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+configurationVariables:
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cr.username
+  : vidi@softwareag.com
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cr.password
+  : "{AES}B8rhTK4DUD1aV3z5wRGTjYaZCTv0DPT1C4mON3qCnd12s1Sa+177lUMRR7zTUwxx"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.poolable
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.userAgent
+  : Cloudstreams
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.protocolVersion
+  : HTTP/1.1
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.rh.requestHeaderNames
+  : "Content-Type,SOAPAction"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.providerUrl
+  : https://d0o000001qr6keac-dev-ed.my.salesforce.com/services/Soap/u/53.0
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cr.preemptiveAuthEnabled
+  : "false"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.readTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.rh.requestHeaderValues
+  : "text/xml,login"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.allowCircularRedirects
+  : "true"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.timeoutType
+  : fixed
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.serverRedirectMax
+  : "5"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.sessionExpiry
+  : "14"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..rajni_testjpn..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:cldp.pr.useExpectCont
+  : "false"
