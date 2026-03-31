@@ -1,12 +1,6 @@
 version: "1.0"
 projectName: Rajni_TestJpnProject
 runtimes:
-- runtimeAlias: Cloud Designtime
-  assets:
-  - name: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.integrations:ConnAndGVTest
-    type: flow
-    stepId: /0
-    reference: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.WmPackageServiceProvider.GB_1:readGlobalvariable
 - runtimeAlias: Rajni_TestJapan3103
   assets:
   - name: CachProperFSWorkflow
@@ -14,3 +8,11 @@ runtimes:
     uid: fla18a1d9a32004aeb8c0c0087c953600c
     stepId: a0
     reference: project.rajni_testjpn.integrations:Sum
+  - name: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.integrations:ConnAndGVTest
+    type: flow
+    stepId: /0
+    reference: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.WmPackageServiceProvider.GB_1:readGlobalvariable
+  - name: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.integrations:ConnAndGVTest
+    type: flow
+    stepId: /1
+    reference: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
