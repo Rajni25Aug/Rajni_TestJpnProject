@@ -26,6 +26,12 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: gv25var
 - name: SSL_JDBC_Test
+  version: "1.0"
+  gitServerName: RajniVCTest
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: Rajni25Aug
+  gitBranch: main
+- name: JMS2waySSL
   gitServerName: RajniVCTest
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Rajni25Aug
@@ -34,6 +40,8 @@ services:
 - serviceName: project.rajni_testjpn.integrations:Sum
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -60,6 +68,8 @@ services:
 - serviceName: project.rajni_testjpn.integrations:deepclonetest
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
