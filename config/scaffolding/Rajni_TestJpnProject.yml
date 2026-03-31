@@ -38,6 +38,7 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: RajniVCTest
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Rajni25Aug
@@ -111,3 +112,45 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.808
+- serviceName: project.rajni_testjpn.integrations:testjms
+  packages:
+  - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: publisher:publisher
+  packages:
+  - name: JMSTest
+    version: "1.0"
+- serviceName: pub.jms:send
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.808
+- serviceName: jms2wayssl_publisher:jms2wayssl_publisher
+  packages:
+  - name: JMS2waySSL
+    version: "1.0"
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
