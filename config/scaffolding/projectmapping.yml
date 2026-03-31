@@ -1,0 +1,10 @@
+version: "1.0"
+projectName: Rajni_TestJpnProject
+runtimes:
+- runtimeAlias: Cloud Designtime
+  assets:
+  - name: CachProperFSWorkflow
+    type: workflow
+    uid: fla18a1d9a32004aeb8c0c0087c953600c
+    stepId: a0
+    reference: project.rajni_testjpn.integrations:Sum
