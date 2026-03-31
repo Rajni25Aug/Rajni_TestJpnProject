@@ -13,7 +13,7 @@
   <COMMENT></COMMENT>
 </INVOKE>
 
-<INVOKE NAME="SSL_JDBC_Test" SERVICE="SSL_JDBC_Test.services:get_ssl">
+<INVOKE NAME="SSL_JDBC_Test" SERVICE="SSL_JDBC_Test.services:get_ssl" DISABLED="true">
   <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>
