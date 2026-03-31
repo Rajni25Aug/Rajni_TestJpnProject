@@ -14,14 +14,22 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: DADA_GlobalVariable1
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: gv25var
 services:
 - serviceName: project.rajni_testjpn.integrations:Sum
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
@@ -44,6 +52,8 @@ services:
 - serviceName: project.rajni_testjpn.integrations:deepclonetest
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
