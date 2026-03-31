@@ -16,3 +16,7 @@ runtimes:
     type: flow
     stepId: /1
     reference: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.WmPackageServiceProvider.SIQACloudStreamsTests:connetorOperations
+  - name: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.integrations:jdbctest
+    type: flow
+    stepId: /0
+    reference: fld_113306453_stage00.projects.fl32e6da2bfa884d2b8d492ec6f40e3502.WmPackageServiceProvider.SIQAJDBCAdapterTests.adapterServices:getData
