@@ -1,7 +1,7 @@
 version: "1.0"
 projectName: Rajni_TestJpnProject
 runtimes:
-- runtimeAlias: Cloud Designtime
+- runtimeAlias: Rajni_TestJapan3103
   assets:
   - name: CachProperFSWorkflow
     type: workflow
