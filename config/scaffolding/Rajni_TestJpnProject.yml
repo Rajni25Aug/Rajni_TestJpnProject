@@ -43,10 +43,17 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Rajni25Aug
   gitBranch: main
+- name: DADA_ExtendedProperty
+  gitServerName: RajniVCTest
+  gitUrl: https://github.com/ParmelaDohling579
+  gitUsername: Rajni25Aug
+  gitBranch: main
 services:
 - serviceName: project.rajni_testjpn.integrations:Sum
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
@@ -77,6 +84,8 @@ services:
 - serviceName: project.rajni_testjpn.integrations:deepclonetest
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
@@ -115,6 +124,8 @@ services:
 - serviceName: project.rajni_testjpn.integrations:testjms
   packages:
   - name: Rajni_TestJpnProject
+    version: "1.0"
+  - name: DADA_ExtendedProperty
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
