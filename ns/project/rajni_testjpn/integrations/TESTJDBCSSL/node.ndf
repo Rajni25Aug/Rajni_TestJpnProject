@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">KumariRajni.Singh@ibm.com</value>
-    <value name="lastModifiedDate">1774952884017</value>
+    <value name="lastModifiedDate">1774955983776</value>
     <value name="displayName">TESTJDBCSSL</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -60,9 +60,9 @@
         </record>
         <Boolean name="isProjectPackage">false</Boolean>
         <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="description">SSL_JDBC_Test.services:insert_ssl</value>
-          <value name="serviceName">SSL_JDBC_Test.services:insert_ssl</value>
-          <value name="displayName">insert_ssl</value>
+          <value name="description">SSL_JDBC_Test.services:get_ssl</value>
+          <value name="serviceName">SSL_JDBC_Test.services:get_ssl</value>
+          <value name="displayName">get_ssl</value>
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
@@ -70,6 +70,8 @@
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
     </record>
   </record>
