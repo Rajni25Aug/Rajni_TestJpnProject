@@ -20,16 +20,24 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: gv25var
+- name: SSL_JDBC_Test
+  gitServerName: RajniVCTest
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: Rajni25Aug
+  gitBranch: main
 services:
 - serviceName: project.rajni_testjpn.integrations:Sum
   packages:
   - name: Rajni_TestJpnProject
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
@@ -54,6 +62,8 @@ services:
   - name: Rajni_TestJpnProject
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: SIQAJDBCAdapterTests
     version: "1.0"
